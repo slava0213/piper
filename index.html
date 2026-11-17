@@ -1,0 +1,20 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Песочник — мнение о мультфильме</title><link rel="stylesheet" href="style.css"></head>
+<body data-theme="day">
+<canvas id="grain"></canvas><div id="tide"></div><div id="surge"></div>
+<nav><a href="#top">Берег</a><a href="#heroes">Герои</a><a href="#story">История</a><a href="#frags">Фрагменты</a><a href="#opinion">Мнение</a><a href="#moral">Мораль</a><a href="#dig">Игра</a><a href="#book">Отзывы</a>
+<span class="tools"><button id="th" title="Сменить время суток">☀️</button><button id="wv" title="Позвать волну">🌊</button></span></nav>
+<header class="hero" id="top"><div class="bg"></div><div class="in"><div class="tag" data-k="tag"></div><h1 data-k="title"></h1><p data-k="tagline"></p><small data-k="author"></small></div>
+<div class="birds">🐦 · · 🐦 · 🐦</div><div class="bub"></div>
+<svg class="wvs a" viewBox="0 0 1440 140" preserveAspectRatio="none"><path d="M0 60Q180 0 360 60T720 60T1080 60T1440 60V140H0Z"/></svg><svg class="wvs b" viewBox="0 0 1440 140" preserveAspectRatio="none"><path d="M0 70Q180 20 360 70T720 70T1080 70T1440 70V140H0Z"/></svg><svg class="wvs c" viewBox="0 0 1440 140" preserveAspectRatio="none"><path d="M0 95Q180 55 360 95T720 95T1080 95T1440 95V140H0Z"/></svg></header>
+<section id="intro"><div class="two"><div class="rv"><div class="eb">О чём это</div><h2>Шесть минут без единого слова</h2><div id="introText"></div></div><figure class="frame rv" id="introFig"></figure></div></section>
+<div class="sea" id="heroes"><div class="wrap"><div class="eb">Кто есть кто на берегу</div><h2>Герои песка и прибоя</h2><div class="cast" id="cast"></div></div></div>
+<section id="story"><div class="eb">Сюжет, как я его запомнил</div><h2>Пять шагов к воде</h2><div id="acts"></div></section>
+<section id="frags" class="band"><div class="eb">Что понравилось, а что нет</div><h2>Фрагменты под лупой</h2><p class="lead">Кликни на кадр, чтобы увеличить. Фильтры ниже. Сердечко — моя «личная» отметка, оно запоминается в твоём браузере.</p>
+<div class="filters"><button class="on" data-f="all">Все</button><button data-f="like">👍 Понравилось</button><button data-f="mixed">🤔 По-разному</button><button data-f="dislike">👎 Не понравилось</button></div><div class="fgrid" id="fgrid"></div></section>
+<section id="opinion"><div class="eb">Что я об этом думаю</div><h2>Моё мнение</h2><div class="opinion rv" id="op"></div><div class="q rv" id="quote"></div></section>
+<div class="sea" id="moral"><div class="wrap"><div class="eb">Что фильм говорит о жизни</div><h2>Мораль: моя точка зрения</h2><div class="mor" id="mor"></div></div></div>
+<section id="dig"><div class="two"><div><div class="eb">Давай как Пайпер</div><h2 data-k="gameTitle"></h2><p data-k="gameText"></p><p><b>Найдено: <span id="sc">0</span></b></p></div><div id="game"></div></div></section>
+<section id="book" class="band"><div class="eb">А ты что думаешь?</div><h2>Книга отзывов</h2><div class="two"><form id="bf"><input id="bn" placeholder="Твоё имя" maxlength="30"><textarea id="bt" rows="4" placeholder="Какой момент тебе запомнился?" maxlength="400"></textarea><button>Оставить ракушку 🐚</button><small>Отзывы хранятся только в твоём браузере.</small></form><div id="bl"></div></div></section>
+<footer><img src="assets/still_sunset.jpg" alt=""><h2>Спасибо, Пайпер</h2><p data-k="credits"></p><p class="dim" data-k="disclaimer"></p></footer>
+<button id="up" title="Наверх">🐚</button><div id="lb"><img alt=""></div>
+<script src="content.js"></script><script src="app.js"></script></body></html>
